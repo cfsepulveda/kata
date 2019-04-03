@@ -30,3 +30,8 @@ class NumeroTest(TestCase):
 
     def test_procesar_cadena_n_numeros_cadena_dos(self):
         self.assertEqual(Numero().resolverDos("1, 2, 0 ,4"), [4, 0], "n números") 
+
+
+        #Iteración 3
+    def test_procesarCadena_dos(self):
+        self.assertEqual(Numero().resolverTres(""), [0, 0, 0], "Cadena vacía")
