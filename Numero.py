@@ -31,4 +31,4 @@ class Numero:
         if not cadena:
             return [0, 0, 0, 0] 
         else:
-            return [len(arrNumber), float(min(arrNumber)),  float(max(arrNumber))]     
+            return [len(arrNumber), float(min(arrNumber)),  float(max(arrNumber)), 1]     
