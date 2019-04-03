@@ -1,4 +1,7 @@
 class Numero:
 
     def resolver(self, cadena):
-        return [] 
+        if not cadena:
+            return [0] 
+        else:
+            return [len(cadena)]         
