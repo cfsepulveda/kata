@@ -52,3 +52,6 @@ class NumeroTest(TestCase):
 
     def test_procesar_cadena_un_numeros_cadena_cuatro(self):
         self.assertEqual(Numero().resolverCuatro("1"), [1, 1, 1, 1], "Cadena vacía")
+
+    def test_procesar_cadena_dos_numeros_cadena_cuatro(self):
+        self.assertEqual(Numero().resolverCuatro("1, 9"), [1, 1, 9, 5], "Cadena vacía")        
