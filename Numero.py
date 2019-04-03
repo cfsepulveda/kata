@@ -1,5 +1,6 @@
 class Numero:
 
+
     def resolver(self, cadena):
         cadena = cadena.replace(' ', '')
         arrNumber = cadena.split(",")
@@ -31,4 +32,10 @@ class Numero:
         if not cadena:
             return [0, 0, 0, 0] 
         else:
-            return [len(arrNumber), float(min(arrNumber)),  float(max(arrNumber)), 1]     
+            sum=0.0
+            for i in range(0,len(arrNumber)):
+                sum=sum+float(arrNumber[i])
+                promedio = sum/len(arrNumber)
+            return [len(arrNumber), float(min(arrNumber)),  float(max(arrNumber)), float(promedio)]     
+
+    
