@@ -15,4 +15,4 @@ class Numero:
         if not cadena:
             return [0, 0] 
         else:
-            return [len(arrNumber)]     
+            return [len(arrNumber), float(min(arrNumber))]     

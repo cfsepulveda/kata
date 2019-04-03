@@ -23,4 +23,4 @@ class NumeroTest(TestCase):
         self.assertEqual(Numero().resolverDos(""), [0, 0], "Cadena vacía")
 
     def test_procesar_cadena_un_numero_cadena_dos(self):
-        self.assertEqual(Numero().resolver("1"), [1, 1], "Un número") 
+        self.assertEqual(Numero().resolverDos("1"), [1, 1], "Un número") 
