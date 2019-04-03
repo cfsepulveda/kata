@@ -22,8 +22,11 @@ class NumeroTest(TestCase):
     def test_procesarCadena_dos(self):
         self.assertEqual(Numero().resolverDos(""), [0, 0], "Cadena vacía")
 
-    def test_procesar_cadena_un_numero_cadena_dos(self):
+    def test_procesar_cadena_un_numeros_cadena_dos(self):
         self.assertEqual(Numero().resolverDos("1"), [1, 1], "Un número") 
 
-    def test_procesar_cadena_dos_numero_cadena_dos(self):
-        self.assertEqual(Numero().resolverDos("1, 2"), [2, 1], "dos número") 
+    def test_procesar_cadena_dos_numeros_cadena_dos(self):
+        self.assertEqual(Numero().resolverDos("1, 2"), [2, 1], "dos números") 
+
+    def test_procesar_cadena_n_numeros_cadena_dos(self):
+        self.assertEqual(Numero().resolverDos("1, 2, 0 ,4"), [4, 0], "n números") 
