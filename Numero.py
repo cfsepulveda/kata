@@ -13,6 +13,6 @@ class Numero:
         cadena = cadena.replace(' ', '')
         arrNumber = cadena.split(",")
         if not cadena:
-            return [0] 
+            return [0, 0] 
         else:
             return [len(arrNumber)]     

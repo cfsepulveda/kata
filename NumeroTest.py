@@ -20,4 +20,4 @@ class NumeroTest(TestCase):
         #Iteración 2
 
     def test_procesarCadena_dos(self):
-        self.assertEqual(Numero().resolver(""), [0, 0], "Cadena vacía")
+        self.assertEqual(Numero().resolverDos(""), [0, 0], "Cadena vacía")
