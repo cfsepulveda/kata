@@ -1,7 +1,9 @@
 class Numero:
 
     def resolver(self, cadena):
+        cadena = cadena.replace(' ', '')
+        arrNumber = cadena.split(",")
         if not cadena:
             return [0] 
         else:
-            return [len(cadena)]         
+            return [len(arrNumber)]         
