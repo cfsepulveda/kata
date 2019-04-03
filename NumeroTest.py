@@ -4,4 +4,4 @@ from Numero import Numero
 class NumeroTest(TestCase):
 
     def test_procesarCadena(self):
-        self.assertEqual(Numero().resolver(""), [0], "Cadena vacía")
+        self.assertEqual(Numero().resolver(""), [], "Cadena vacía")
