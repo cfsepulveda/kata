@@ -3,6 +3,8 @@ from Numero import Numero
 
 class NumeroTest(TestCase):
 
+    #Iteración 1
+
     def test_procesarCadena(self):
         self.assertEqual(Numero().resolver(""), [0], "Cadena vacía")
 
@@ -13,4 +15,9 @@ class NumeroTest(TestCase):
         self.assertEqual(Numero().resolver("1, 2"), [2], "dos números") 
         
     def test_procesar_cadena_seis_cadena(self):
-        self.assertEqual(Numero().resolver("1, 2, 4, 5, 5, 4"), [6], "dos números")         
+        self.assertEqual(Numero().resolver("1, 2, 4, 5, 5, 4"), [6], "6 números")         
+
+        #Iteración 2
+
+    def test_procesarCadena_dos(self):
+        self.assertEqual(Numero().resolver(""), [0, 0], "Cadena vacía")
